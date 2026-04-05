@@ -1,6 +1,6 @@
-# Predicting Boston Housing Prices
+# 🏠 Predicting Boston Housing Prices
 
-## Overview
+## 📖 Overview
 This project aims to build a predictive model for estimating housing prices in the Boston area using the **Boston Housing Dataset**. It covers:
 - Data exploration and visualization
 - Feature analysis
@@ -9,7 +9,7 @@ This project aims to build a predictive model for estimating housing prices in t
 - Making predictions for new client data
 - Saving the trained model for future use
 
-## Dataset
+## 🗂 Dataset
 The `housing.csv` dataset contains 506 entries with 14 attributes:
 
 | Feature | Description |
@@ -19,31 +19,31 @@ The `housing.csv` dataset contains 506 entries with 14 attributes:
 | LSTAT | % lower status of the population |
 | MEDV | Median value of owner-occupied homes in $1000s (target variable) |
 
-## Project Steps
+## 🔍 Project Steps
 
-### 1. Data Exploration
+### 1️⃣ Data Exploration
 - Loaded dataset using `pandas`
 - Checked data types, missing values, and descriptive statistics
 - Separated features (`RM`, `LSTAT`, `PTRATIO`) and target (`MEDV`)
 - Visualized relationships using regression plots
 
-### 2. Feature Observation
+### 2️⃣ Feature Observation
 - **RM (Average Rooms):** More rooms → higher price  
 - **LSTAT (% Lower Class):** Higher LSTAT → lower price  
 - **PTRATIO (Student-Teacher Ratio):** Higher PTRATIO → lower price  
 
-### 3. Model Development
+### 3️⃣ Model Development
 - Performance metric: **R² score**
 - Split dataset: 80% training, 20% testing
 - Visualized **learning curves** and **complexity curves**
 - Determined optimal depth for Decision Tree Regressor
 
-### 4. Model Optimization
+### 4️⃣ Model Optimization
 - Used `GridSearchCV` with `ShuffleSplit` cross-validation
 - Scoring function: R² metric
 - Optimal `max_depth = 6`
 
-### 5. Predictions
+### 5️⃣ Predictions
 Sample client predictions:
 
 | Client | Features (RM, LSTAT, PTRATIO) | Predicted Price ($) |
@@ -52,7 +52,7 @@ Sample client predictions:
 | 2 | [4, 55, 22] | 284,200 |
 | 3 | [8, 7, 12]  | 933,975 |
 
-### 6. Saving the Model
+### 6️⃣ Saving the Model
 - Saved trained Decision Tree Regressor using `pickle` as `boston_housing_model.pkl`
 
 ## Libraries & Tools
